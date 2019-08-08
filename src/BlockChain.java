@@ -13,7 +13,7 @@ public BlockChain(String data)
 	this.data=data;
 	this.hash=hash;
 }
-//New constructor is created for calclulating previous hash
+//New constructor is created for Calclulating previous hash
 public BlockChain(String data,String previousHash)
 {
 	this.data=data;

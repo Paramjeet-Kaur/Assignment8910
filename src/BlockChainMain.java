@@ -14,7 +14,7 @@ public class BlockChainMain {
 		System.out.println("This is my changed hash code: "+MyFirstBlock.CalculateHash());
 		
 		//series of 4 blocks in which first one have data and all other are null
-		//the hash of secound one depend on first one hash and similar thing follow up for all blocks further
+		//the hash of secound one depend on first one hash and similar thing follow up for all blocks Further
 
 		BlockChain MySecoundBlock=new BlockChain("ThisIsMyFirstBlock",MyFirstBlock.getHash());
 		System.out.println("This is my Secound block: " +MySecoundBlock.CalculatePreviousHash());
