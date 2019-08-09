@@ -16,8 +16,6 @@ public BlockChain(String data)
 //New constructor is created for Calclulating previous hash
 public BlockChain(String data,String previousHash)
 {
-	this.data=data;
-	this.hash=hash;
 	this.previousHash=previousHash;
 }
 //getter and setters are generated
@@ -58,4 +56,19 @@ public int CalculatePreviousHash()
 	int CalculatePreviousHash=(data+previousHash).hashCode();
 	return CalculatePreviousHash;	
 }
+/*Creating a method naming blockTransactionValidator to validate whether
+the previous hash equal to current hash of the block */
+public void blockTransactionValidator(int currentHash,int PreviousHash)
+{
+		if(PreviousHash==currentHash ) 
+	{
+		System.out.println("Previous and current Hashes are equal");
+	}
+	else
+	{
+		System.out.println("Previous and current Hashes are not equal");
+	}
+	
+}
+
 }
